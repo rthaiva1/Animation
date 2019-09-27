@@ -10,15 +10,12 @@ import SpriteKit
 
 class GameScene: SKScene {
     
-    
-    private var lastUpdateTime : TimeInterval = 0
-    private var label : SKLabelNode?
-    private var spinnyNode : SKShapeNode?
+    var player:SKSpriteNode
+    var star:SKEmitterNode
     
     override func sceneDidLoad() {
 
     }
-    
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
