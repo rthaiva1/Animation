@@ -7,30 +7,19 @@
 //
 
 import SpriteKit
-
 class GameScene: SKScene {
     
-    var player:SKSpriteNode
-    var star:SKEmitterNode
+    var player:SKSpriteNode!
+    var star:SKEmitterNode!
     
-    override func sceneDidLoad() {
+    override func sceneDidLoad()
+    {
 
     }
-    
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-          }
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-     }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-     }
-    
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+     
+    func addEmitter(){
+        let emitter = SKEmitterNode(fileNamed: Emitter.MyParticle)!
     }
-    
-    
     override func update(_ currentTime: TimeInterval) {
     }
 }

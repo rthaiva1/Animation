@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1416452523400F0F00E9DD48 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1416452423400F0F00E9DD48 /* MyParticle.sks */; };
 		149C9032233AB4AD008CB97E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149C9031233AB4AD008CB97E /* AppDelegate.swift */; };
 		149C9034233AB4AD008CB97E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 149C9033233AB4AD008CB97E /* GameScene.sks */; };
 		149C9036233AB4AD008CB97E /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 149C9035233AB4AD008CB97E /* Actions.sks */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1416452423400F0F00E9DD48 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
 		149C902E233AB4AD008CB97E /* Asteroid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asteroid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		149C9031233AB4AD008CB97E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		149C9033233AB4AD008CB97E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				149C903E233AB4AE008CB97E /* Assets.xcassets */,
 				149C9040233AB4AE008CB97E /* LaunchScreen.storyboard */,
 				149C9043233AB4AE008CB97E /* Info.plist */,
+				1416452423400F0F00E9DD48 /* MyParticle.sks */,
 			);
 			path = Asteroid;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				149C903D233AB4AD008CB97E /* Main.storyboard in Resources */,
+				1416452523400F0F00E9DD48 /* MyParticle.sks in Resources */,
 				149C9034233AB4AD008CB97E /* GameScene.sks in Resources */,
 				149C903F233AB4AE008CB97E /* Assets.xcassets in Resources */,
 				149C9042233AB4AE008CB97E /* LaunchScreen.storyboard in Resources */,
