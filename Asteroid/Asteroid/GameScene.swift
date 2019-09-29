@@ -7,19 +7,25 @@
 //
 
 import SpriteKit
+import GameplayKit
 class GameScene: SKScene {
     
     var player:SKSpriteNode!
-    var star:SKEmitterNode!
+    var field:SKEmitterNode!
     
-    override func sceneDidLoad()
-    {
-
+    override func didMove(to view: SKView) {
+        field = SKEmitterNode(fileNamed: "MyParticle")
+        field.position = CGPoint(x: 0, y: 1472)
+        field.advanceSimulationTime(40)
+        self.addChild(field)
+        
+        field.zPosition =  -1
+        
+        player = SKSpriteNode(imageNamed: "download")
+  
+        self.addChild(player)
     }
      
-    func addEmitter(){
-        let emitter = SKEmitterNode(fileNamed: Emitter.MyParticle)!
-    }
     override func update(_ currentTime: TimeInterval) {
     }
 }
