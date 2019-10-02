@@ -15,13 +15,11 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         field = SKEmitterNode(fileNamed: "MyParticle")
-        field.position = CGPoint(x: 0, y: 1472)
-        field.advanceSimulationTime(40)
+        field.position = CGPoint(x: 0, y: self.frame.size.height)
         self.addChild(field)
-        
         field.zPosition =  -1
-        
         player = SKSpriteNode(imageNamed: "download")
+        player.position = CGPoint(x: 0, y: -(self.frame.size.height/2 - player.size.height))
   
         self.addChild(player)
     }
