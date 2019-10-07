@@ -24,7 +24,7 @@ class GameScene: SKScene {
         player = SKSpriteNode(imageNamed: "Player")
         player.position = CGPoint(x: 0, y: -(self.frame.size.height/2 - player.size.height))
         self.addChild(player)
-        attacktime = Timer.scheduledTimer(timeInterval: 0.50, target: self,selector: #selector(addVillian), userInfo: nil, repeats: true)
+        attacktime = Timer.scheduledTimer(timeInterval: 0.75, target: self,selector: #selector(addVillian), userInfo: nil, repeats: true)
     }
     
     @objc func addVillian()
@@ -38,10 +38,13 @@ class GameScene: SKScene {
         }
         
         let villian = SKSpriteNode(imageNamed: totalVillians[count])
-        let rand = GKRandomDistribution(lowestValue: 0, highestValue: 400)
+        let rand = GKRandomDistribution(lowestValue: Int(-self.frame.width/2 + villian.size.width), highestValue:Int(self.frame.width/2 - villian.size.width))
         let position = CGFloat(rand.nextInt())
-        villian.position = CGPoint(x: pos, y: self.frame.size.height + villian.size.height)
-        
+        villian.position = CGPoint(x: position, y: self.frame.size.height + villian.size.height)
+        villian.physicsBody = SKPhysicsBody(rectangleOf :villian.size)
+        villian.physicsBody?.isDynamic = true
+        self.addChild(villian)
+        self.physicsWorld.gravity = CGVector(dx: 0, dy: -0.40)
         
     }
     
